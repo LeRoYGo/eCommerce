@@ -1,7 +1,7 @@
-import CardProduct from './components/CardProduct';
+import Catalog from './components/Catalog';
 
 function App() {
-  return <CardProduct />;
+  return <Catalog />;
 }
 
 export default App;

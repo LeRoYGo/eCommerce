@@ -4,7 +4,7 @@ import starFill from '../../assets/star.svg';
 function CardProduct() {
   return (
     <div className={style.card}>
-      <img className={style.img} src="https://i.ibb.co/VWJ7Ngkn/Default.png" alt="" />
+      <img className={style.img} src="https://i.ibb.co/VWJ7Ngkn/Default.png" alt="chair" />
       <div className={style.stars}>
         {[...new Array(5)].map((_, i) => (
           <img key={i} src={starFill} alt="star fill" />
