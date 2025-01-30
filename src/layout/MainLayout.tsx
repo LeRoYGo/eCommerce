@@ -1,14 +1,19 @@
-import './App.css';
+import '../App.css';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
-function App() {
+import { Outlet } from 'react-router';
+
+function MainLayout() {
   return (
-    <div className="wrapper">
+    <>
       <Header />
+      <main className="main">
+        <Outlet />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
-export default App;
+export default MainLayout;

@@ -1,4 +1,13 @@
-.wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
+html,
+body,
+#root {
+  min-height: 100%;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
 }

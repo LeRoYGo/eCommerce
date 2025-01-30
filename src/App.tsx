@@ -1,15 +1,23 @@
-import './App.css';
-import Catalog from './components/Catalog';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import { Routes, Route } from 'react-router';
+
+import MainLayout from './layout/MainLayout';
+import HomePages from './pages/HomePages';
+import CataloguePages from './pages/CataloguePages/CataloguePages';
+import ProductPages from './pages/ProductPages';
+import ContactPages from './pages/ContactPages';
+import NotFoundPages from './pages/NotFoundPages';
 
 function App() {
   return (
-    <div className="wrapper">
-      <Header />
-      <Catalog />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<HomePages />} />
+        <Route path="shop" element={<CataloguePages />} />
+        <Route path="product" element={<ProductPages />} />
+        <Route path="contact" element={<ContactPages />} />
+        <Route path="*" element={<NotFoundPages />} />
+      </Route>
+    </Routes>
   );
 }
 

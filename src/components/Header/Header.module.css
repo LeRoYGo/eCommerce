@@ -1,8 +1,12 @@
-.header {
+.header > * {
   padding: 35px 65px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .svg {
@@ -17,4 +21,9 @@
 .blockBtn {
   display: flex;
   column-gap: 20px;
+}
+
+.active {
+  color: #000000;
+  font-weight: bold;
 }

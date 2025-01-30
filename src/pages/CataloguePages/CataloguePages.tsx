@@ -1,6 +1,6 @@
-import style from './Catalog.module.css';
-import CardProduct from '../CardProduct';
-import Categories from '../Categories';
+import style from './CataloguePages.module.css';
+import CardProduct from '../../components/CardProduct';
+import Categories from '../../components/Categories';
 
 const cardProducts = [
   {
@@ -33,7 +33,7 @@ const cardProducts = [
   },
 ];
 
-function Catalog() {
+function CataloguePages() {
   return (
     <div className={style.catalog}>
       <div className={style.banner}>
@@ -51,4 +51,4 @@ function Catalog() {
   );
 }
 
-export default Catalog;
+export default CataloguePages;

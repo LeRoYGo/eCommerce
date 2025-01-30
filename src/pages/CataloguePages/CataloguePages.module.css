@@ -3,6 +3,8 @@
   grid-template-columns: minmax(300px, 400px) auto;
   grid-template-rows: max-content min-content;
   padding: 0 65px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .banner {
   grid-area: 1 / 1 / 2 / 3;
@@ -21,4 +23,5 @@
   flex-wrap: wrap;
   justify-content: start;
   gap: 5px;
+  margin-bottom: 10px;
 }
