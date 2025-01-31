@@ -1,13 +1,6 @@
 import style from './CardProduct.module.css';
 import starFill from '../../assets/star.svg';
-
-type CardProductProps = {
-  id?: string | number;
-  img: string;
-  countStars: number;
-  title: string;
-  price: number;
-};
+import { CardProductProps } from './CardProduct.props';
 
 function CardProduct({ img, countStars, title, price }: CardProductProps) {
   return (

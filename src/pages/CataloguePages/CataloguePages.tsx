@@ -5,6 +5,7 @@ import { useAppSelector } from '../../redux/store';
 
 function CataloguePages() {
   const products = useAppSelector((state) => state.products);
+
   return (
     <div className={style.catalog}>
       <div className={style.banner}>

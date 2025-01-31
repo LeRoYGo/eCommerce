@@ -1,29 +1,30 @@
-.header > * {
-  padding: 35px 65px;
+.header {
+  padding: 20px 35px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .wrapper {
   max-width: 1920px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .svg {
   fill: #000000;
 }
 
-.navList {
+.nav > ul {
   list-style: none;
   display: flex;
   column-gap: 40px;
+  padding-left: 0;
 }
-.blockBtn {
-  display: flex;
-  column-gap: 20px;
-}
-
 .active {
   color: #000000;
   font-weight: bold;
+}
+
+.blockBtn {
+  display: flex;
+  column-gap: 20px;
 }

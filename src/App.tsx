@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router';
 
 import MainLayout from './layout/MainLayout';
 import HomePages from './pages/HomePages';
-import CataloguePages from './pages/CataloguePages/CataloguePages';
+import CataloguePages from './pages/CataloguePages';
 import ProductPages from './pages/ProductPages';
 import ContactPages from './pages/ContactPages';
 import NotFoundPages from './pages/NotFoundPages';
