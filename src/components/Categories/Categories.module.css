@@ -2,6 +2,10 @@ a {
   text-decoration: none;
   color: #9dadbe;
 }
+.filter {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
 .list {
   margin: 0;
   padding-left: 0;

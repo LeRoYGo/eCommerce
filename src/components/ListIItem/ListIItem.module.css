@@ -1,0 +1,7 @@
+.list {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}

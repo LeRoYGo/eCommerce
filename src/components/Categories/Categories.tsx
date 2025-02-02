@@ -7,15 +7,17 @@ function Categories() {
   const categories = useAppSelector((state) => state.categories);
 
   return (
-    <ul className={style.list}>
-      {categories.map((item) => (
-        <li key={item.id} className={style.list_item}>
-          <NavLink to={item.category} className={({ isActive }) => (isActive ? style.active : '')}>
-            {item.name}
-          </NavLink>
-        </li>
-      ))}
-    </ul>
+    <nav className={style.filter}>
+      <ul className={style.list}>
+        {categories.map((item) => (
+          <li key={item.id} className={style.list_item}>
+            <NavLink to={item.path} className={({ isActive }) => (isActive ? style.active : '')}>
+              {item.name}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
 
