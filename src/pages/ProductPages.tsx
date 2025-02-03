@@ -1,5 +1,12 @@
+import { useParams } from 'react-router';
+
 function ProductPages() {
-  return <h1>ProductPages</h1>;
+  const { productID, category } = useParams();
+  return (
+    <h1>
+      {category} ProductPages {productID}
+    </h1>
+  );
 }
 
 export default ProductPages;

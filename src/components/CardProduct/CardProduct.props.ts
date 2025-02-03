@@ -1,5 +1,5 @@
 export type CardProductProps = {
-  id?: string | number;
+  id: string | number;
   img: string;
   countStars: number;
   title: string;

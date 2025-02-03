@@ -6,7 +6,7 @@ function CardСategory({ img, name, path }: CategoriesProps) {
   return (
     <Link to={path} className={style.card}>
       <img className={style.img} src={img} alt={name} />
-      <h3 className={style.title}>{name}</h3>
+      <strong className={style.name}>{name}</strong>
     </Link>
   );
 }

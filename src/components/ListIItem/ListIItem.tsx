@@ -1,15 +1,21 @@
 import style from './ListIItem.module.css';
-import { useAppSelector } from '../../redux/store';
-import CardСategory from '../CardСategory';
+import { CardProductProps } from '../CardProduct/CardProduct.props';
 
-function ListIItem() {
-  const categories = useAppSelector((state) => state.categories);
+type ListIItemProps = {
+  сomponent: any;
+  data: any[] | CardProductProps[];
+};
+
+function ListIItem({ сomponent, data }: ListIItemProps) {
+  const Component = сomponent;
   return (
-    <div className={style.list}>
-      {categories.map((item) => (
-        <CardСategory key={item.id} {...item} />
+    <ul className={style.list}>
+      {data.map((item) => (
+        <li className={style.item}>
+          <Component key={item.id} {...item} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 

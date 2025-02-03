@@ -7,7 +7,10 @@
 .banner {
   grid-area: 1 / 1 / 2 / 3;
   margin-bottom: 56px;
+  overflow: hidden;
+  text-align: center;
 }
 .banner img {
+  max-height: 250px;
   width: 100%;
 }

@@ -13,7 +13,7 @@ function Navigation({ styles, active }: NavigationProps) {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/shop" className={isActive}>
+          <NavLink to="/сatalog" className={isActive}>
             Shop
           </NavLink>
         </li>
