@@ -11,28 +11,28 @@ interface productsState {
 const initialState: productsState[] = [
   {
     id: 1,
-    img: `https://i.ibb.co/VWJ7Ngkn/Default.png`,
+    img: `https://trade59.ru/content/files/catalog1/iphone16pd1_1726064003.jpg`,
     countStars: 5,
     title: '1.3 Chair',
     price: 69.9,
   },
   {
     id: 2,
-    img: `https://i.ibb.co/5XmdN808/Default-1.png`,
+    img: `https://trade59.ru/content/files/catalog1/xio14tb1_1727785276_2_2.jpg`,
     countStars: 3,
     title: 'Kuyu Desk',
     price: 6.9,
   },
   {
     id: 3,
-    img: `https://i.ibb.co/FLsPKdGy/Default-2.png`,
+    img: `https://trade59.ru/content/files/catalog1/2_hbiukv_jpg_1717496406.jpg`,
     countStars: 4,
     title: 'Neat Noon',
     price: 9.9,
   },
   {
     id: 4,
-    img: `https://i.ibb.co/DDD7CxnK/Default-3.png`,
+    img: `https://trade59.ru/content/files/catalog1/mitvapq55_1729850157.jpg`,
     countStars: 1,
     title: 'Morph',
     price: 169.9,

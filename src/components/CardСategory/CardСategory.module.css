@@ -7,7 +7,6 @@
   border-radius: 10px;
   transition: background-color 1s;
   padding: 10px;
-  background: linear-gradient(180deg, #f6f6f6, #ecf0f0);
 }
 .card:hover {
   background: #faebd7;

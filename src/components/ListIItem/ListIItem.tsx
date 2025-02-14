@@ -11,7 +11,7 @@ function ListIItem({ сomponent, data }: ListIItemProps) {
   return (
     <ul className={style.list}>
       {data.map((item) => (
-        <li className={style.item}>
+        <li key={item.id} className={style.item}>
           <Component key={item.id} {...item} />
         </li>
       ))}

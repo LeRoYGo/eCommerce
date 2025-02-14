@@ -34,14 +34,14 @@ const initialState: categoriesState[] = [
   },
   {
     id: 5,
-    path: 'tablets',
-    name: 'Планшеты',
+    path: 'monitors',
+    name: 'Мониторы',
     img: 'https://technolove.ru/upload/iblock/653/Bitmap_7.webp',
   },
   {
     id: 6,
-    path: 'notebooks',
-    name: 'Ноутбуки',
+    path: 'quadcopters',
+    name: 'Квадрокоптеры',
     img: 'https://technolove.ru/upload/iblock/9af/Bitmap_3.webp',
   },
 ];
