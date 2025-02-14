@@ -37,6 +37,20 @@ const initialState: productsState[] = [
     title: 'Morph',
     price: 169.9,
   },
+  {
+    id: 5,
+    img: `https://trade59.ru/content/files/catalog1/2_hbiukv_jpg_1717496406.jpg`,
+    countStars: 4,
+    title: 'Neat Noon',
+    price: 9.9,
+  },
+  {
+    id: 6,
+    img: `https://trade59.ru/content/files/catalog1/mitvapq55_1729850157.jpg`,
+    countStars: 1,
+    title: 'Morph',
+    price: 169.9,
+  },
 ];
 
 export const productsSlice = createSlice({

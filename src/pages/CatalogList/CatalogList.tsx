@@ -1,8 +1,10 @@
-import style from './ListIItem.module.css';
-import { CardProductProps } from '../CardProduct/CardProduct.props';
+import { ElementType } from 'react';
+
+import style from './CatalogList.module.css';
+import { CardProductProps } from '../../components/CardProduct/CardProduct.props';
 
 type ListIItemProps = {
-  сomponent: any;
+  сomponent: ElementType;
   data: any[] | CardProductProps[];
 };
 

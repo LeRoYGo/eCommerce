@@ -1,4 +1,4 @@
-import style from './CatalogPages.module.css';
+import style from './CatalogLayout.module.css';
 import Categories from '../../components/Categories';
 import { Outlet } from 'react-router';
 

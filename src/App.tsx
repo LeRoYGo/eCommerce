@@ -1,14 +1,14 @@
 import { Routes, Route } from 'react-router';
 
+import { useAppSelector } from './redux/store';
 import MainLayout from './layout/MainLayout';
+import CatalogLayout from './layout/CatalogLayout';
 import HomePages from './pages/HomePages';
 import ProductPages from './pages/ProductPages';
 import ContactPages from './pages/ContactPages';
 import NotFoundPages from './pages/NotFoundPages';
-import CatalogPages from './pages/CatalogPages';
-import ListIItem from './components/ListIItem';
-import { useAppSelector } from './redux/store';
 
+import CatalogList from './pages/CatalogList';
 import CardСategory from './components/CardСategory';
 import CardProduct from './components/CardProduct';
 
@@ -20,9 +20,12 @@ function App() {
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePages />} />
-        <Route path="сatalog" element={<CatalogPages />}>
-          <Route index element={<ListIItem сomponent={CardСategory} data={categories} />} />
-          <Route path=":category" element={<ListIItem сomponent={CardProduct} data={products} />} />
+        <Route path="сatalog" element={<CatalogLayout />}>
+          <Route index element={<CatalogList сomponent={CardСategory} data={categories} />} />
+          <Route
+            path=":category"
+            element={<CatalogList сomponent={CardProduct} data={products} />}
+          />
           <Route path=":category/:productID" element={<ProductPages />} />
         </Route>
         <Route path="product" element={<h2>Product</h2>} />
