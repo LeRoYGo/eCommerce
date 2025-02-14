@@ -12,5 +12,6 @@
 }
 .banner img {
   max-height: 250px;
+  min-height: 100px;
   width: 100%;
 }
