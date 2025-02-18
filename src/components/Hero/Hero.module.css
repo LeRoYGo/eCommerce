@@ -1,0 +1,130 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 100px 0;
+}
+
+.gallery {
+  width: 650px;
+  height: 516px;
+}
+.content {
+  width: 536px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 3%;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: #6c6c6c;
+  margin: 0;
+}
+
+/* Button Block */
+.buttonBlock {
+  display: flex;
+  gap: 16px;
+}
+.button,
+.buttonBlack {
+  cursor: pointer;
+  padding: 16px 56px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.buttonBlack {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+/* Equipment */
+.equipment {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 5px;
+}
+.equipment li a {
+  display: block;
+  width: 122px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(111, 111, 111);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+}
+.equipment li a.active {
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.equipment li a.notInStock {
+  border: 1px solid rgb(213, 213, 213);
+  color: rgb(213, 213, 213);
+}
+
+/* selectColor */
+.selectColor {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.selectColorTitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.selectColorList {
+  list-style: none;
+  display: flex;
+  column-gap: 10px;
+}
+.selectColorList li {
+  overflow: hidden;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.selectColorList li.active {
+  border: 3px solid #000000;
+}
+.selectColorList li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

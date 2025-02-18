@@ -1,11 +1,12 @@
-import { useParams } from 'react-router';
+import CharacteristicsBlock from '../components/CharacteristicsBlock';
+import Hero from '../components/Hero';
 
 function ProductPages() {
-  const { productID, category } = useParams();
   return (
-    <h1>
-      {category} ProductPages {productID}
-    </h1>
+    <>
+      <Hero />
+      <CharacteristicsBlock />
+    </>
   );
 }
 

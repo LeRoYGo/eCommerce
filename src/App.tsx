@@ -26,8 +26,8 @@ function App() {
             path=":category"
             element={<CatalogList сomponent={CardProduct} data={products} />}
           />
-          <Route path=":category/:productID" element={<ProductPages />} />
         </Route>
+        <Route path="сatalog/:category/:productID" element={<ProductPages />} />
         <Route path="product" element={<h2>Product</h2>} />
         <Route path="contact" element={<ContactPages />} />
         <Route path="*" element={<NotFoundPages />} />

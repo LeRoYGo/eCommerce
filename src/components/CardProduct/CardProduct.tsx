@@ -3,7 +3,8 @@ import starFill from '../../assets/star.svg';
 import { CardProductProps } from './CardProduct.props';
 import { Link } from 'react-router';
 
-function CardProduct({ id, img, countStars, title, price }: CardProductProps) {
+function CardProduct(data: CardProductProps) {
+  const { id, img, countStars, title, price } = data;
   return (
     <Link to={id.toString()} className={style.card}>
       <img className={style.img} src={img} alt={title} />

@@ -1,0 +1,37 @@
+.container {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.characteristic {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 20px;
+}
+
+.titleh1 {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+
+  margin-bottom: 32px;
+}
+
+.desc {
+  color: rgb(157, 157, 157);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 32px;
+  margin-block-start: 0;
+}
