@@ -1,47 +1,50 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { RootState } from '../store';
 
+// https://67b40753392f4aa94fa903ac.mockapi.io/api/categories
+// Запрос на сервер для получения категории
+
 export type categoriesState = {
   id: number;
-  name: string;
+  title: string;
   img: string;
-  path: string;
+  categoryName: string;
 };
 const initialState: categoriesState[] = [
   {
     id: 1,
-    path: 'smartphone',
-    name: 'Смартфоны',
+    categoryName: 'smartphone',
+    title: 'Смартфоны',
     img: 'https://technolove.ru/upload/iblock/d16/Bitmap_5.webp',
   },
   {
     id: 2,
-    path: 'umnye-chasy-i-braslety',
-    name: 'Умные часы и браслеты',
+    categoryName: 'umnye-chasy-i-braslety',
+    title: 'Умные часы и браслеты',
     img: 'https://technolove.ru/upload/iblock/58b/4-_1_.webp',
   },
   {
     id: 3,
-    path: 'tablets',
-    name: 'Планшеты',
+    categoryName: 'tablets',
+    title: 'Планшеты',
     img: 'https://technolove.ru/upload/iblock/653/Bitmap_7.webp',
   },
   {
     id: 4,
-    path: 'notebooks',
-    name: 'Ноутбуки',
+    categoryName: 'notebooks',
+    title: 'Ноутбуки',
     img: 'https://technolove.ru/upload/iblock/9af/Bitmap_3.webp',
   },
   {
     id: 5,
-    path: 'monitors',
-    name: 'Мониторы',
+    categoryName: 'monitors',
+    title: 'Мониторы',
     img: 'https://technolove.ru/upload/iblock/653/Bitmap_7.webp',
   },
   {
     id: 6,
-    path: 'quadcopters',
-    name: 'Квадрокоптеры',
+    categoryName: 'quadcopters',
+    title: 'Квадрокоптеры',
     img: 'https://technolove.ru/upload/iblock/9af/Bitmap_3.webp',
   },
 ];

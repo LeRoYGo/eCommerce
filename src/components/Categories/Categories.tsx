@@ -11,8 +11,10 @@ function Categories() {
       <ul className={style.list}>
         {categories.map((item) => (
           <li key={item.id} className={style.list_item}>
-            <NavLink to={item.path} className={({ isActive }) => (isActive ? style.active : '')}>
-              {item.name}
+            <NavLink
+              to={item.categoryName}
+              className={({ isActive }) => (isActive ? style.active : '')}>
+              {item.title}
             </NavLink>
           </li>
         ))}
