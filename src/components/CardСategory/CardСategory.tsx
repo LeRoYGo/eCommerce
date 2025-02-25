@@ -10,5 +10,4 @@ function CardСategory(data: CategoriesProps) {
     </Link>
   );
 }
-
 export default CardСategory;
